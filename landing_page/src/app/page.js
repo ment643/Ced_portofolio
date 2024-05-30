@@ -1,28 +1,40 @@
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+
+const Homepage = () => {
   return (
-    <div className="h-screen bg-image flex  flex-col ga-p-5">
     
-    
- {/*TEXT CONTAINER*/}
-<div className="h-1/2 text-white relative">
-   
-    {/*TITLE*/}
-    <h1 className="mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter p-10">Cedick <br/><span>Ngoma</span></h1>
-
-</div>
+ <div className="h-screen flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10 ">
   
-{/*image CONTAINER*/}
- 
-<div className="h-1/2 text-white p-5 flex flex-col">
-  <Image src="/cedColor.png" alt="" fill className="object-contain p-5"/>
+      {/*IMAGE CONTAINER*/}
+    <div className="h-1/2 lg:h-full lg:w-1/2 relative " >
+          <Image src="/cedB&w.png" alt="" fill className="object-contain"/>
 
-{/*DESCRIPTION*/}
-   <h1 className="font-bold p-10">Web Developer and Production Designer <br/>based in your City</h1>
-</div>
+     </div>
+      {/*TEXT CONTAINER*/}
+    <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+     {/*TITLE*/}
+     <h1 className="text-4xl md:text-6xl font-bold">I'm Cedrick Ngoma</h1>
+    <h2 className="md:text-xl w-full">Web Developer & Designer  in your city</h2>
+  {/*DESCRIPTION*/}
+  <div className="flex w-full gap-4">
+     <Link href="/About">
+      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">About me</button>
+     </Link>
+     <Link href="/Projects">
+
+         <button  className="p-4 rounded-lg ring-1 ring-black">my projects</button>
+     </Link>
+      
+  </div>
     
-</div>
+    </div>
+  
+
+  </div>
   )
 }
 
+
+export default Homepage;

@@ -1,40 +1,34 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
 
-
-const Homepage = () => {
+function Home() {
   return (
-    
- <div className="h-screen flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10 ">
-  
-      {/*IMAGE CONTAINER*/}
-    <div className="h-1/2 lg:h-full lg:w-1/2 relative " >
-          <Image src="/cedB&w.png" alt="" fill className="object-contain"/>
-
-     </div>
-      {/*TEXT CONTAINER*/}
-    <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
-     {/*TITLE*/}
-     <h1 className="text-4xl md:text-6xl font-bold">I'm Cedrick Ngoma</h1>
-    <h2 className="md:text-xl w-full">Web Developer & Designer  in your city</h2>
-  {/*DESCRIPTION*/}
-  <div className="flex w-full gap-4">
-     <Link href="/About">
-      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">About me</button>
-     </Link>
-     <Link href="/Projects">
-
-         <button  className="p-4 rounded-lg ring-1 ring-black">my projects</button>
-     </Link>
-      
-  </div>
-    
+ <div className="flex flex-col gap-20  w-full h-full justify-center items-center ">
+    <div>
+      <h1 className="text-6xl font-bold">Reprogramming your brain</h1>
+        <h2 className="text-4xl font-semibold flex justify-center  m-5">
+         Take control of your power
+      </h2>
     </div>
-  
+    <div>
+      <Image src="/main.jpg" alt="Main image" width= {300} height ={200}/>
+     <div className="flex justify-center">
+       <button className=" bg-transparent hover:bg-white p-4 text-blue-700 font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded m-5">start</button>
+     </div> 
+     
+      </div>
+      
+    
+   </div> 
 
-  </div>
+
   )
 }
 
+export default Home
 
-export default Homepage;
+
+
+
+
+
+

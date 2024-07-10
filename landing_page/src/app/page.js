@@ -12,7 +12,7 @@ function Home() {
     <div>
       <Image src="/main.jpg" alt="Main image" width= {300} height ={200}/>
      <div className="flex justify-center">
-       <button className=" bg-transparent hover:bg-white p-4 text-blue-700 font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded m-5">start</button>
+       <button className=" bg-transparent hover:bg-green-500 p-4 text-blue-700 font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded m-5">start</button>
      </div> 
      
       </div>

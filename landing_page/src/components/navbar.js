@@ -6,7 +6,7 @@ const Navbar = () => {
     const links = [{
         url:"/", tittle:"Home"},
        { url: "/About", tittle:"About"},
-       { url: "/Projects", tittle:"Projects "
+       { url: "/Action", tittle:"Action "
     }]
   return (
    <div className="h-full flex items-center  justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
